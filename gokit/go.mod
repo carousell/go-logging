@@ -3,7 +3,7 @@ module github.com/carousell/logging/gokit
 go 1.17
 
 require (
-	github.com/carousell/logging v0.0.0-20230309052847-0ca09d715077
+	github.com/carousell/logging v0.0.0-20230309075249-4114a5a7ce11
 	github.com/go-kit/kit v0.12.0
 )
 
