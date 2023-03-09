@@ -1,2 +1,2 @@
-github.com/carousell/logging v1.0.0 h1:NJ6Y3cSwt1G3HrlWdScK15f6mp/nYCDIKtNevcgFR2Q=
-github.com/carousell/logging v1.0.0/go.mod h1:dZGZ2h6oCq6pTeiAkzUb787AVaJkj7K5KunorOa9wG4=
+github.com/carousell/logging v0.0.0-20230309053157-e9fe03966440 h1:045tZdD/Dl77d3jt4cO7kcy2qePYqaiggckk6ZCpLjM=
+github.com/carousell/logging v0.0.0-20230309053157-e9fe03966440/go.mod h1:dZGZ2h6oCq6pTeiAkzUb787AVaJkj7K5KunorOa9wG4=
