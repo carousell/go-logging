@@ -1,5 +1,5 @@
-github.com/carousell/logging v0.0.0-20230309052847-0ca09d715077 h1:DyAC2OniFxDO7B+e55Ozgmo4tBZIiVv/LztcugLK2ng=
-github.com/carousell/logging v0.0.0-20230309052847-0ca09d715077/go.mod h1:dZGZ2h6oCq6pTeiAkzUb787AVaJkj7K5KunorOa9wG4=
+github.com/carousell/logging v1.0.0 h1:NJ6Y3cSwt1G3HrlWdScK15f6mp/nYCDIKtNevcgFR2Q=
+github.com/carousell/logging v1.0.0/go.mod h1:dZGZ2h6oCq6pTeiAkzUb787AVaJkj7K5KunorOa9wG4=
 github.com/go-kit/kit v0.12.0 h1:e4o3o3IsBfAKQh5Qbbiqyfu97Ku7jrO/JbohvztANh4=
 github.com/go-kit/kit v0.12.0/go.mod h1:lHd+EkCZPIwYItmGDDRdhinkzX2A1sj+M9biaEaizzs=
 github.com/go-kit/log v0.2.0 h1:7i2K3eKTos3Vc0enKCfnVcgHh2olr/MyfboYq7cAcFw=
