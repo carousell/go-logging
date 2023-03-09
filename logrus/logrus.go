@@ -4,7 +4,7 @@ package logrus
 import (
 	"context"
 	"fmt"
-	"github.com/carousell/logging/logging"
+	"github.com/carousell/logging"
 	stdlog "log"
 	"os"
 

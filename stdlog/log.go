@@ -3,7 +3,7 @@ package stdlog
 
 import (
 	"context"
-	"github.com/carousell/logging/logging"
+	"github.com/carousell/logging"
 	"log"
 )
 
