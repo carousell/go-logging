@@ -51,6 +51,9 @@ func (l *logger) Log(ctx context.Context, level Level, skip int, args ...interfa
 // NewLogger creates a new logger with a provided BaseLogger
 func NewLogger(log BaseLogger) Logger {
 	l := new(logger)
+	if log == nil {
+		log = NewStdLogger()
+	}
 	l.baseLog = log
 	return l
 }
