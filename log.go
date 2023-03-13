@@ -60,6 +60,11 @@ func NewLogger(log BaseLogger) Logger {
 
 // GetLogger returns the global logger
 func GetLogger() Logger {
+	if defaultLogger == nil {
+		mu.Lock()
+		defer mu.Unlock()
+		defaultLogger = NewLogger(nil)
+	}
 	return defaultLogger
 }
 
