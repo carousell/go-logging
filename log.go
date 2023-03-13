@@ -6,9 +6,9 @@ import (
 )
 
 var (
-	defaultLogger Logger
-	mu            sync.Mutex
-	once          sync.Once
+	globalLogger Logger
+	mu           sync.Mutex
+	once         sync.Once
 )
 
 type logger struct {
@@ -60,12 +60,12 @@ func NewLogger(log BaseLogger) Logger {
 
 // GetLogger returns the global logger
 func GetLogger() Logger {
-	if defaultLogger == nil {
+	if globalLogger == nil {
 		mu.Lock()
 		defer mu.Unlock()
-		defaultLogger = NewLogger(nil)
+		globalLogger = NewLogger(nil)
 	}
-	return defaultLogger
+	return globalLogger
 }
 
 // SetLogger sets the global logger
@@ -73,13 +73,15 @@ func SetLogger(l Logger) {
 	if l != nil {
 		mu.Lock()
 		defer mu.Unlock()
-		defaultLogger = l
+		globalLogger = l
 	}
 }
+
+// RegisterLogger register a BaseLogger for global use
 func RegisterLogger(logger BaseLogger) {
 	once.Do(func() {
-		if defaultLogger == nil {
-			defaultLogger = NewLogger(logger)
+		if globalLogger == nil {
+			globalLogger = NewLogger(logger)
 		}
 	})
 }
