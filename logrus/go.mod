@@ -1,4 +1,4 @@
-module github.com/carousell/logging/logrus
+module github.com/carousell/go-logging/logrus
 
 go 1.17
 

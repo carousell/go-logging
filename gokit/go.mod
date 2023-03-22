@@ -1,4 +1,4 @@
-module github.com/carousell/logging/gokit
+module github.com/carousell/go-logging/gokit
 
 go 1.17
 
