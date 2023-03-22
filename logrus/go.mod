@@ -3,7 +3,7 @@ module github.com/carousell/logging/logrus
 go 1.17
 
 require (
-	github.com/carousell/logging v0.0.0-20230309075249-4114a5a7ce11
+	github.com/carousell/go-logging v0.0.0-20230322092117-f9109074cec7
 	github.com/sirupsen/logrus v1.9.0
 )
 

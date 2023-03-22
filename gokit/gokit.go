@@ -4,7 +4,7 @@ package gokit
 import (
 	"context"
 	"fmt"
-	"github.com/carousell/logging"
+	"github.com/carousell/go-logging"
 	syslog "log"
 	"os"
 
