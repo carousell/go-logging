@@ -1,3 +1,3 @@
-module github.com/carousell/logging
+module github.com/carousell/go-logging
 
 go 1.17
