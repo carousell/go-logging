@@ -24,6 +24,12 @@ func main() {
 	foo(ctx)
 	logging.InfoV2(ctx, "after called foo()")
 	//{"@timestamp":"2023-04-27T00:39:45.574079+08:00","caller":"go-logging/new.go:33","level":"info","main1":"main1","main2":123,"msg":"after called foo()"}
+
+	logging.InfoV3(ctx, "msg v3 without attributes", nil)
+	//{"@timestamp":"2023-04-27T00:01:39.701337+05:30","caller":"go-logging/new.go:35","level":"info","main1":"main1","main2":123,"msg":"msg v3 without attributes"}
+
+	logging.InfoV3(ctx, "msg v3", logging.AttrMap{"listing_id": "1000323749", "is_exp_enabled": true})
+	//{"@timestamp":"2023-04-27T00:04:01.998833+05:30","caller":"go-logging/new.go:35","is_exp_enabled":true,"level":"info","listing_id":"1000323749","main1":"main1","main2":123,"msg":"msg v3"}
 }
 
 func foo(ctx context.Context) {

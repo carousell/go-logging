@@ -6,6 +6,8 @@ import (
 
 type Attr [2]interface{}
 
+type AttrMap map[string]interface{}
+
 type LoggerV2 interface {
 	Info(ctx context.Context, msg string, attrs ...Attr)
 }
@@ -63,6 +65,15 @@ func GetLoggerV2(ctx context.Context) LoggerV2 {
 func InfoV2(ctx context.Context, msg string, attrs ...Attr) {
 	logger := GetLoggerV2(ctx)
 	logger.Info(ctx, msg, attrs...)
+}
+
+func InfoV3(ctx context.Context, msg string, attrs AttrMap) {
+	logger := GetLoggerV2(ctx)
+	var args []Attr
+	for k, v := range attrs {
+		args = append(args, WithAttr(k, v))
+	}
+	logger.Info(ctx, msg, args...)
 }
 
 func WithAttr(key string, value interface{}) Attr {
