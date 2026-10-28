@@ -1,6 +1,6 @@
 module github.com/carousell/go-logging/gokit
 
-go 1.17
+go 1.25.3
 
 require (
 	github.com/carousell/go-logging v0.0.0-20230322092117-f9109074cec7

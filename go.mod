@@ -1,3 +1,3 @@
 module github.com/carousell/go-logging
 
-go 1.17
+go 1.25.3
